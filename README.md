@@ -1,34 +1,100 @@
-# Credit-EDA-Case-Study
+# Credit EDA Case Study 💳📊
 
-This case study aims to give you an idea of applying EDA in a real business scenario. 
-In this case study, apart from applying the techniques that you have learnt in the EDA module, you will also develop a basic understanding of risk analytics in banking and financial services and understand how data is used to minimise the risk of losing money while lending to customers.
+## Overview
+This project performs an **Exploratory Data Analysis (EDA)** on a credit dataset to uncover key insights related to customer behavior and creditworthiness. Using various data analysis techniques, this project aims to help financial institutions assess credit risk and make informed lending decisions.
 
-# Business Understanding
+## Key Features
+- **Data Cleaning**: Removed missing values, outliers, and inconsistencies to prepare the data for analysis.
+- **Exploratory Data Analysis**: Utilized descriptive statistics and visualizations to explore the relationships between various features.
+- **Feature Engineering**: Created new features that provide deeper insights into customer behavior and lending risks.
+- **Business Insights**: Derived actionable insights to assist financial institutions in better assessing credit risk.
 
-The loan providing companies find it hard to give loans to the people due to their insufficient or non-existent credit history. Because of that, some consumers use it as their advantage by becoming a defaulter. Suppose you work for a consumer finance company which specialises in lending various types of loans to urban customers. You have to use EDA to analyse the patterns present in the data. This will ensure that the applicants capable of repaying the loan are not rejected.
-When the company receives a loan application, the company has to decide for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
+## Technologies Used
+- **Python**: For data analysis and manipulation.
+- **Pandas**: Data handling and manipulation.
+- **NumPy**: Numerical computations.
+- **Matplotlib & Seaborn**: Data visualization libraries for generating insights.
+- **Jupyter Notebook**: For interactive exploration and documentation.
 
-1. If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
+## File Structure
+The repository consists of the following files:
+- `Credit_EDA_Case_Study.ipynb`: Jupyter Notebook containing the full exploratory data analysis.
+- `Credit_EDA_Case_Study.html`: HTML version of the notebook for easy viewing.
+- `Credit EDA Case Study.pptx`: PowerPoint presentation summarizing the findings of the analysis.
+- `Credit EDA Case Study.pdf`: PDF version of the analysis report.
+- `README.md`: The current file, describing the project details and instructions.
 
-2. If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company.
+## Business Questions Explored
+1. **Credit Score Distribution**: What does the distribution of credit scores look like across customers?
+2. **Loan Amount vs. Credit Score**: Is there a relationship between loan amount and credit score?
+3. **Income and Loan Default**: Does income level impact the likelihood of default?
+4. **Payment History Trends**: How does payment history affect credit score and default risk?
+5. **Predictors of Default**: Which features are most predictive of customer default?
 
-The data given below contains the information about the loan application at the time of applying for the loan. It contains two types of scenarios:
+## Insights Delivered
+1. **Credit Score Distribution**: Most customers have mid-range credit scores, with fewer at the extremes.
+   - **Insight**: Institutions should focus on mid-range score customers for potential lending opportunities.
+   
+2. **Loan Amount vs. Credit Score**: Lower credit scores are correlated with smaller loan amounts.
+   - **Insight**: Individuals with lower credit scores may apply for smaller loans but pose a higher risk of default.
 
-1. The client with payment difficulties: he/she had late payment more than X days on at least one of the first Y instalments of the loan in our sample,
+3. **Income vs. Loan Default**: Higher-income customers generally have a lower default rate.
+   - **Insight**: Income is a significant factor in assessing loan repayment potential.
 
-2. All other cases: All other cases when the payment is paid on time.
+4. **Payment History Trends**: Delayed payments are associated with lower credit scores and a higher likelihood of default.
+   - **Insight**: Payment history is a crucial factor for assessing customer risk.
 
-When a client applies for a loan, there are four types of decisions that could be taken by the client/company):
+5. **Correlation Analysis**: Features like credit score, loan amount, and income show strong correlations with default risk.
+   - **Insight**: Credit scores and income are key indicators for predicting customer behavior.
 
-1. **Approved**: The Company has approved loan Application
+## Visualizations
+Several visualizations were created to support the analysis, including:
+- **Credit Score Distribution**: Histogram representing customer credit scores.
+- **Loan Amount vs. Credit Score**: Scatter plot showing the relationship between loan amounts and credit scores.
+- **Income vs. Default**: Bar plot comparing income levels and default rates.
+- **Payment History vs. Credit Score**: Line chart illustrating the impact of payment history on credit scores.
 
-2. **Cancelled**: The client cancelled the application sometime during approval. Either the client changed her/his mind about the loan or in some cases due to a higher risk of the client he received worse pricing which he did not want.
+## How to Use
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/vijayrangvani/Credit-EDA-Case-Study.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Credit-EDA-Case-Study
+    ```
+3. Install dependencies by running:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. Run the Jupyter notebook:
+    ```bash
+    jupyter notebook Credit_EDA_Case_Study.ipynb
+    ```
 
-3. **Refused**: The company had rejected the loan (because the client does not meet their requirements etc.).
+Alternatively, you can view the analysis directly in `Credit_EDA_Case_Study.html` or access the summary report in `Credit EDA Case Study.pptx` or `Credit EDA Case Study.pdf`.
 
-4. **Unused offer**:  Loan has been cancelled by the client but on different stages of the process.
+## Requirements
+To run the project, you’ll need the following dependencies:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `jupyter`
 
-In this case study, you will use EDA to understand how consumer attributes and loan attributes influence the tendency of default.
+Install these by running:
+```bash
+pip install -r requirements.txt
+```
+## Insights Delivered
+- **Customer Credit Risk**: Analyzed the factors affecting creditworthiness, highlighting the significance of income and credit score.
+- **Loan Amount Trends**: Examined the relationship between loan amounts and credit scores, identifying patterns in lending behavior.
+- **Payment History Impact**: Evaluated how payment history influences credit scores and default risk.
+- **Income Level Analysis**: Assessed the correlation between income levels and loan default rates, providing insights into customer repayment potential.
+- **Predictive Features**: Identified key features that predict customer default, aiding financial institutions in risk assessment.
 
-# Business Objectives
-This case study aims to identify patterns which indicate if a client has difficulty paying their installments which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc. This will ensure that the consumers capable of repaying the loan are not rejected. Identification of such applicants using EDA is the aim of this case study.
+## Contact
+**Vijay Rangvani**  
+[LinkedIn](https://www.linkedin.com/in/vijayrangvani/) | [Portfolio](https://mavenanalytics.io/profile/Vijay-Rangvani/132085571)
+
+
